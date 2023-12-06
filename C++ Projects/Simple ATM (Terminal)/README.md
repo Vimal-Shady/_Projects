@@ -3,4 +3,4 @@
       PIN   : 1234
 ## Feel Free to Create Your Own Account too!
 # Caution:
-####   The APP will Terminate if the PIN is Entered Wrongly for about 3 Times
+####   The APP Will Terminate If The PIN Or The User Status is Entered Wrongly for about 3 Times
