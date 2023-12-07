@@ -2,8 +2,8 @@
 #include <cstdlib>
 class New{
 	private:
-		std::string note;
-		int age,pin;
+		std::string note,pin;
+		int age;
 	public:
 		void Create(std::string&user,int&id,std::string&pin){
 			std::cout<<"Enter Your Name: ";
@@ -57,18 +57,18 @@ int main()
 {
     New obj;
 	Check check;
-    int withdraw,deposit;
-    int cash,tr;
-    int limit=100,balance;
+    double withdraw,deposit;
+    double cash;
+    double limit=100,balance;
     std::string action;
     std::string user,id;
-    int op;
+    int op,tr,tr2;
     int acc;
     
     std::string user1="User",user2="";
 	int acc1=7641833,acc2=0;
 	std::string pin1="1234",pin2="";
-    int balance1=10000,balance2=1000;
+    double balance1=10000,balance2=1000;
 	
     while(balance>=0){
     std::cout<<"\n___Welcome To CIT Bank___"<<std::endl;
@@ -79,7 +79,7 @@ int main()
     std::cin>>op;
     std::cout<<"-------------------------------------------\n";
     if(op==3){
-    	std::cout<"Thanks for Banking With Us";
+    	std::cout<<"Thanks for Banking With Us";
     	break;
 	}
     if(op!=1&&op!=2&&op!=3){
@@ -108,7 +108,7 @@ int main()
             else{
                 std::cout<<"You've Entered a Wrong PIN!"<<std::endl;
                 tr+=1;
-		continue;
+				continue;
             }
         }
         else{
@@ -181,11 +181,12 @@ int main()
         std::cout<<"\n-------------------------------------------\n";}
         if (action!="1"&&action!="2"&&action!="3"&&action!="4"){
             std::cout<<"\n Please Enter a Valid Operation";
-            std::cout<<"\nYour Try: "<<tr<<std::endl;
-            tr+=1;}
-        if(tr>3){
+            tr2+=1;
+            std::cout<<"\nYour Try: "<<tr2<<std::endl;
+            }
+        if(tr2==3){
         	break;
-        	tr=0;
+        	tr2=0;
 			}
         
         }
